@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content=""/>
+    <meta name="keywords" content="" />
+    <meta name="author" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximun-scale=1, user-scalable=yes"/>
+    <title>타이틀명 여기</title>
+    <script
+	  src="https://code.jquery.com/jquery-3.3.1.js"
+	  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	  crossorigin="anonymous"></script>
+    <link href="./css/style.css" rel="stylesheet" type="text/css"/>
+    <script src="./js/jquery.fullPage.js "></script>
+</head>
+<body>
+    <main id="fullpage">
+    <section class="section">
+<header>
+    <nav>
+        <div id="menu_btn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+    <h3><a href="#"><img src="./images/logo.png" alt="#" /></a></h3>
+        <ul class="menu">
+            <li><a href="#">자유여행</a>
+                <ul class="submenu">
+                    <li><a href="#">러시아</a></li>
+                    <li><a href="#">일본</a></li>
+                </ul>
+            </li>
+            <li><a href="#">패키지여행</a>
+                <ul class="submenu">
+                    <li><a href="#">러시아</a></li>
+                    <li><a href="#">일본</a></li>
+                </ul>
+            </li>
+            <li><a href="#">커뮤니티</a>
+                <ul class="submenu">
+                    <li><a href="#">여행후기</a></li>
+                    <li><a href="#">자유게시판</a></li>
+                </ul>
+            </li>
+            <li><a href="#">고객센터</a>
+                <ul class="submenu">
+                    <li><a href="#">My Page</a></li>
+                    <li><a href="#">회원정보수정</a></li>
+                    <li><a href="#">나의문의내역</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div>
+        <p>로그인</p>
+       <p>예약확인</p>
+        </div>
+        </nav>
+</header>
+<!--비주얼배너-->
+<div id="slide">
+    <div class="slide"> <img  class="bn" src="./images/main_01.jpg" alt="slide1"/></div>
+        <div class="slide"> <img  class="bn" src="./images/test.png" alt="slide1"/></div>
+        <div class="slide">	<img  class="bn"src="./images/photo2.jpg" alt="slide3"/></div>
+        <div class="slide">	<img  class="bn" src="./images/photo2.jpg" alt="slide3"/></div>
+    </div>
+	<!-- <div class="btn_wrap">
+		<button onclick="prevFun()"><img id="slide_arrow_left"src="./images/left_arrow.png" alt=""></button>
+		<button onclick="nextFun()"><img id="slide_arrow_right"src="./images/right_arrow.png" alt=""></button>
+	</div> -->
+          
+</div>
+</section>
+<!--sec1 어느나라로 가고 싶은가요?-->
+<section class="section">
+
+    <h2>어느나라에 가고싶나요?</h2>
+    <div class="common_question q"> 
+        <h3>어느나라로 가고 싶은가요?</h3>
+    </div>
+
+    <div class="section_contents left_hover ss1" id="ss1">
+        <img class="countries1 selection_img" src="./images/나라1.jpg" alt="">
+        <div class="focus"></div>
+        <div class="question_left">
+            <p>
+                오랜 전통과 세계적인 혁신 기술이 공존하는 나라,<br/>
+                경기와 가부키 공연부터 목판화와 다도에 이르기까지 옛 전통을 잘 보존한 이 나라
+            </p>
+        <h3>일본은 어떠신가요?</h3>
+        </div>  
+        <!--바로가기-->
+        <div class="view_detail_left">
+            <img class="arrow_left" class="countries selection_img" src="./images/left_arrow.png" alt=""/>
+            <a href="#"><h3>러시아 여행정보 바로가기</h3></a>
+        </div>
+    </div>
+
+    <div  class="section_contents right_hover ss2" id="ss2"> 
+        <div class="focus"></div>
+         <img class="countries2 selection_img" src="./images/나라2.jpg" alt=""/>
+         <div class="question_right">
+         <p>
+            다채로운 컬러의 교회와 웅장한 궁전
+    세계적 수준의 극장 및 박물관과 함께 어우러진 이 나라    
+         </p>
+         <h3>러시아는 어떠신가요?</h3>
+         </div>
+          <!--바로가기-->
+          <div class="view_detail_right">
+            </a><img class="arrow_right" class="countries selection_img" src="./images/right_arrow.png" alt=""/>
+            <a href="#"><h3>러시아 여행정보 바로가기</h3></a>
+        </div>
+    </div>
+</section>
+
+<!--sec2 어떻게 여행하고 싶나요? -->
+<section class="section">             
+
+    <h2>어떻게 여행하고 싶나요?</h2>
+    <div class="common_question q" >
+        <h3>어떻게 여행하고 싶나요?</h3>
+    </div>
+
+    <div  class="section_contents  left_hover ss1"  id="ss3"  >
+        <div class="focus"></div>       
+         <img class="countries selection_img" src="./images/pakage.jpg" alt="">
+         <div class="question_left">
+        <p>
+            상품을 빠르고 쉽게 검색하고, 예약 신청, 구매까지의 
+            만족스러운 사용자 경험할 수 있는
+         </p>
+         <h3>패키지 여행은 어떠신가요?</h3>
+         </div>
+
+        <!--바로가기-->
+        <div class="view_detail_left">
+        <img class="arrow_left" class="countries selection_img" src="./images/left_arrow.png" alt=""/>
+        <a href="#"> <h3>패키지 여행정보 바로가기</h3></a>
+        </div>
+    </div>
+    <div  class="section_contents right_hover ss2"  id="ss4">
+        <div class="focus"></div>
+        <img class="countries selection_img" src="./images/free.jpg" alt="">
+        <div class="question_right">
+        <p>
+            아쉬움과 강박감에 시달릴 필요가 없는 
+            말 그대로 '어디든 자유롭게' 다닐 수 있는 
+        </p>
+        <h3>자유 여행은 어떠신가요?</h3>
+        </div>
+
+        <!--바로가기-->
+        <div class="view_detail_right">
+        <img class="arrow_right" class="countries selection_img" src="./images/right_arrow.png" alt=""/>
+        <a href="#"><h3>자유 여행정보 바로가기</h3></a>
+        </div>
+    </div>
+</section>
+
+<!--sec3 도시선택-->
+<section  class="section" id="city">
+    <h2>어느도시에 가고 싶나요??</h2>
+    <div class="common_question q">
+        <h3>이런 도시는 어떤가요?</h3>
+    </div>
+    <div id="img_wrap">
+    <img class="city_img" src="./images/교토.jpg" alt="" />
+    <div class="focus2" id="f1"><p id="e">ssddd</p></div>
+    <h3 id="city_name1">교토</h3>
+    <img class="city_img" src="./images/나고야.jpg" alt="" />
+    <div class="focus2"></div>
+    <h3 id="city_name2">나고야</h3>
+    <img class="city_img" src="./images/도쿄.jpg" alt="" />
+    <div class="focus2"></div>
+    <h3 id="city_name3">도쿄</h3>
+    <img class="city_img" src="./images/오사카.jpg " alt=""/><div class="focus2"></div>
+    <h3 id="city_name4">오사카</h3>
+    <img class="city_img" src="./images/요코하마시.jpg" alt="" />
+    <div class="focus2"></div>  
+    <h3 id="city_name5">요코하마시</h3>
+    <img class="city_img" src="./images/후쿠오카.JPG" alt="" />
+    <div class="focus2"></div>
+    <h3 id="city_name6">후쿠오카</h3>
+    </div>
+</section>
+
+
+<!--sec4 이런곳은 어떤가요?-->
+<section  class="section " id="recommand">
+    <h2>이런곳은 어떤가요?</h2>
+
+    <div class="common_question q" >
+        <h3>이런곳은 어떤가요? </h3>
+    </div>
+
+    <div class="recommand_lists" id="recommand_img1">
+        <a href="#"> <img  class="recommand_img" src="./images/유니버셜.jpg" alt="" />  </a>
+        <div class="intro">
+            <h3>유니버셜 스튜디오</h3>
+            <p>일본 오사카에서 규모가 가장 큰 카에서 규모가 가장 카에서 규모가 가장 카에서 규모가 가장 카에서 규모가 가장 카에서 규모가 가장 카에서 규모가 가장 테마파크ddddddddd</p>
+        </div>
+    </div>
+
+    <div class="recommand_lists" id="recommand_img2">
+        <a href="#"> <img  class="recommand_img" src=
+            "./images/도톤보리.jpg" alt="" /> </a>
+        <div class="intro">
+            <h3>도톤보리</h3>
+            <p>오사카에서 관광객 즐겨 찾는 명소 </p>
+        </div>
+    </div>
+    
+    <div class="recommand_lists" id="recommand_img3">
+     <a href="#"> <img  class="recommand_img" src="./images/오사카성.jpg" alt="" /> </a>
+     <div class="intro">
+         <h3>오사카성</h3>
+         <p>천하통일을 했던 도요토미 히데요시의 성</p>
+     </div>
+    </div>
+</section>
+<section  class="section footer-wrap fp-auto-height">
+<footer class="footer">
+    <ul>
+        <li>
+            (주)Ever Go
+        </li>
+        <li>
+            회사소개
+        </li>
+        <li>
+            찾아오시는길
+        </li>
+        <li>
+            해외여행 약관
+        </li>
+        <li>
+            소비자 피해 보상 규정
+        </li>
+        <li>
+            여행자 보험
+        </li>
+    </ul>
+    <p>
+        사업자등록번호 123-45-67890 | 통신판매업 신고 - 인천 1234호 | 관광사업자 등록번호 123
+    </p>
+        
+    <p>
+        대표이사 : 홍길동 | 개인정보관리책임자 : 홍길동
+    </p>
+    <p>
+        인천 서구 연희동123길 몰라빌딩 202호 | 대표번호 : 123-1234-1234 | E-mail : asdf@naver.com
+    </p>
+    <p>
+        Copyright@ 2022-2022 IOS All Rights Reserved
+    </p>
+    <p>
+        Ever Go여행사는 영업보증 보험 - 국외여행업의 기획여행(2억원), 국외여행업(4천만원)에 가입되어 있습니다.
+    </p>
+</footer>
+</section>
+</main>
+
+<script src='./js/jquery.scrollTo.min.js'></script>
+<script src="./js/js.js"></script>
+</body>
+</html>

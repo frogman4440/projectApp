@@ -1,0 +1,72 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@media all and (max-width:960px){
+    header{height: 60px;}
+    #menu_btn{display:block; width:60px; margin-left:5%; 
+    margin-top: 3%; height: 80px;}
+	#menu_btn>span{
+		display:block;
+		background:#7fc5c5;
+		width:100%;
+		height:4px;
+		transition:all .3s;
+	}
+    
+    #menu_btn>span:nth-child(2){margin:15px 0px;}
+
+	
+
+    #menu_btn.menuAni>span{
+		background:transparent;
+		transition:all .3s;
+	}
+    .menuAni::before{
+		content:'';
+		display:block;
+		width:60px; height:3px;
+		top:15px; left:50px;
+		text-align:center;
+		transform:rotate(-45deg);
+		position:absolute;
+		background:#7fc5c5;
+	}
+	.menuAni::after{
+		content:'';
+		display:block;
+		width:60px; height:3px;
+		top:15px; left:50px;
+		text-align:center;
+		transform:rotate(45deg);
+		position:absolute;
+		background:#7fc5c5;
+	}
+    .menu{
+		width:100%;
+		margin:70px auto; 
+		position:absolute; 
+		display:none;
+		background:rgba(255, 255, 255,.9);
+		top:-10px;
+		z-index: 999999;
+		}
+        nav h3 a img{width: 180px;  margin-top:10px;}
+        nav{position: relative;}
+        nav>h3{position: absolute; left: 50%; top: -20px; transform: translateX(-50%);}
+        nav div:last-child{position: absolute; right: 5%; bottom: 50px;}
+        nav div>p{float: left; margin-left: 30px; font-size: 2vw; font-family: 'Noto Sans KR', sans-serif;}
+		nav div p:last-child{color:#009b9b;}
+        .menu>li>a, .submenu>li>a{display: block; height: 40px; line-height: 40px; padding:5px 10px;}
+		.menu>li>a:hover, .submenu>li>a:hover{color: #fff; font-weight: bold; border-bottom: 1px solid #fff; border-top: 1px solid #fff;}
+		.menu>li:hover, .submenu>li:hover{background:#7fc5c5;}
+		.submenu>li>a{padding:5px 0px 5px 20px;}
+
+		.menu>li>a, .submenu>li>a{
+			display:block;
+			padding:5px 0px 5px 20px;
+			border-bottom:1px solid #7fc5c5;
+			width:100%;
+			transition:all .1s;
+			}
+			.submenu>li>a{padding-left: 40px;}
+			.submenu>li>a::before{content: '-';}
+}

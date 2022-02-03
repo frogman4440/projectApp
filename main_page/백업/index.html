@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content=""/>
+    <meta name="keywords" content="" />
+    <meta name="author" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximun-scale=1, user-scalable=yes"/>
+    <title>타이틀명 여기</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link href="./css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<header>
+    <nav>
+        <div id="menu_btn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+    <h3><a href="#"><img src="./images/logo.png" alt="#" /></a></h3>
+        <ul class="menu">
+            <li><a href="#">자유여행</a>
+                <ul class="submenu">
+                    <li><a href="#">러시아</a></li>
+                    <li><a href="#">일본</a></li>
+                </ul>
+            </li>
+            <li><a href="#">패키지여행</a>
+                <ul class="submenu">
+                    <li><a href="#">러시아</a></li>
+                    <li><a href="#">일본</a></li>
+                </ul>
+            </li>
+            <li><a href="#">커뮤니티</a>
+                <ul class="submenu">
+                    <li><a href="#">여행후기</a></li>
+                    <li><a href="#">자유게시판</a></li>
+                </ul>
+            </li>
+            <li><a href="#">고객센터</a>
+                <ul class="submenu">
+                    <li><a href="#">My Page</a></li>
+                    <li><a href="#">회원정보수정</a></li>
+                    <li><a href="#">나의문의내역</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div>
+        <p>로그인</p>
+       <p>예약확인</p>
+       </div>
+    </nav>
+</header>
+<!--비주얼배너-->
+<div id="slide">
+	<ul class="slideWrap">
+		<li>
+			<div class="photo">
+				<img src="./images/main_01.jpg" alt="slide1"/>
+				01
+			</div>
+		</li>
+		<li>
+			<div class="photo">
+				<img src="./images/img02.jpg" alt="slide2"/>
+				02
+			</div>
+		</li>
+		<li>
+			<div class="photo">
+				<img src="./images/img03.jpg" alt="slide3"/>
+				03
+			</div>
+		</li>
+		<li>
+			<div class="photo">
+				<img src="./images/img04.jpg" alt="slide3"/>
+				04
+			</div>
+		</li>
+		<li>
+			<div class="photo">
+				<img src="./images/img05.jpg" alt="slide3"/>
+				05
+			</div>
+		</li>
+		<li>
+			<div class="photo">
+				<img src="./images/photo1.jpg" alt="slide3"/>
+				06
+			</div>
+		</li>
+		<li>
+			<div class="photo">
+				<img src="./images/photo2.jpg" alt="slide3"/>
+				07
+			</div>
+		</li>
+	</ul>
+	<div class="btn_wrap">
+		<button onclick="prevFun()">이전</button>
+		<button onclick="nextFun()">다음</button>
+	</div>
+           <!-- 네비게이션 -->
+           <div class="nav_wap2">
+            <div  class="common_nav1_2"></div>
+            <div  class="common_nav2_2"></div>
+            <div  class="common_nav3_2"></div>
+            <div  class="common_nav4_2"></div>
+            <div  class="common_nav5_2"></div>
+        </div>
+</div>
+
+<!--sec1 어느나라로 가고 싶은가요?-->
+<section>
+    <h2>어느나라에 가고싶나요?</h2>
+    <div class="common_question">
+        <h3>어느나라로 가고 싶은가요?</h3>
+    </div>
+
+    <div class="section_contents">
+        <div class="focus"></div>
+        <!-- 네비게이션 -->
+        <div class="nav_wap">
+            <div  class="common_nav1"></div>
+            <div  class="common_nav2"></div>
+            <div  class="common_nav3"></div>
+            <div  class="common_nav4"></div>
+            <div  class="common_nav5"></div>
+        </div>
+        <img class="countries selection_img" src="./images/나라1.jpg" alt="">
+        <div class="question_left">
+        <p>
+        오랜 전통과 세계적인 혁신 기술이 공존하는 나라,<br/>
+        경기와 가부키 공연부터 목판화와 다도에 이르기까지 옛 전통을 잘 보존한 이 나라
+        </p>
+        <h3>일본은 어떠신가요?</h3>
+        </div>  
+        <!--바로가기-->
+        <div class="view_detail_left">
+            <img class="arrow" class="countries selection_img" src="./images/left_arrow.png" alt=""/>
+            <h3>러시아 여행정보 바로가기</h3>
+        </div>
+    </div>
+    <div  class="section_contents"> 
+        <div class="focus"></div>
+         <img class="countries selection_img" src="./images/나라2.jpg" alt=""/>
+         <div class="question_right">
+         <p>
+         오랜 전통과 세계적인 혁신 기술이 공존하는 나라,<br/>
+         경기와 가부키 공연부터 목판화와 다도에 이르기까지 옛 전통을 잘 보존한 이 나라
+         </p>
+         <h3>일본은 어떠신가요?</h3>
+         </div>
+    </div>
+</section>
+<!--sec2어떻게 여행하고 싶나요? -->
+<section>                
+    <h2>어떻게 여행하고 싶나요?</h2>
+    <div class="common_question">
+        <h3>어떻게 여행하고 싶나요?</h3>
+    </div>
+    <div  class="section_contents">
+        <div class="focus"></div>       
+        <div class="nav_wap">
+            <div  class="common_nav1"></div>
+            <div  class="common_nav2"></div>
+            <div  class="common_nav3"></div>
+            <div  class="common_nav4"></div>
+            <div  class="common_nav5"></div>
+        </div>
+         <img class="countries selection_img" src="./images/패키지.jpg" alt="">
+         <div class="question_left">
+        <p>
+		   오랜 전통과 세계적인 혁신 기술이 공존하는 나라,<br/>
+         경기와 가부키 공연부터 목판화와 다도에 이르기까지 옛 전통을 잘 보존한 이 나라
+         </p>
+         <h3>일본은 어떠신가요?</h3>
+         </div>
+    </div>
+    <div  class="section_contents">
+        <div class="focus"></div>
+        <img class="countries selection_img" src="./images/자유.jpg" alt="">
+        <div class="question_right">
+        <p>
+        오랜랜 전통과 세계적인 혁신 기술이 공존하는 나라,<br/>
+        경기와 가부키 공연부터 목판화와 다도에 이르기까지 옛 전통을 잘 보존한 이 나라
+        </p>
+        <h3>일본은 어떠신가요?</h3>
+        </div>
+    </div>
+</section>
+<!--sec3 도시선택-->
+<section id="city">
+    <h2>어느도시에 가고 싶나요??</h2>
+    <div class="common_question">
+        <h3>어느도시에 가고 싶나요?</h3>
+    </div>
+    
+    <div id="city_list">
+        <div><a href="#"><img class="city_img" src="./images/img01.jpg" alt="" /></a></div>
+        <div><a href="#"><img class="city_img" src="./images/img01.jpg" alt="" /></a></div>
+        <div><a href="#"><img class="city_img" src="./images/img01.jpg" alt="" /></a></div>
+        <div><a href="#"><img class="city_img" src="./images/img01.jpg" alt="" /></a></div>
+        <div><a href="#"><img class="city_img" src="./images/img01.jpg" alt="" /></a></div>
+        <div><a href="#"><img class="city_img" src="./images/img01.jpg" alt="" /></a></div>
+
+            <!-- 네비게이션 -->
+      <div class="nav_wap2">
+        <div  class="common_nav1_2"></div>
+        <div  class="common_nav2_2"></div>
+        <div  class="common_nav3_2"></div>
+        <div  class="common_nav4_2"></div>
+        <div  class="common_nav5_2"></div>
+    </div>
+    </div>
+  
+</section>
+<!--sec4 이런곳은 어떤가요?-->
+<section id="recommand">
+    <h2>이런곳은 어떤가요?</h2>
+    <div class="common_question">
+        <h3>이런곳은 어떤가요? </h3>
+    </div>
+    <div class="recommand_lists">
+        <a href="#">
+            <img class="recommand_img" src="./images/img01.jpg" alt="" />
+        </a>
+    </div>
+    <div class="recommand_lists">
+        <a href="#">
+            <img class="recommand_img" src="./images/img01.jpg" alt="" />
+        </a>
+    </div>
+    <div class="recommand_lists">
+        <a href="#">
+            <img class="recommand_img" src="./images/img01.jpg" alt="" />
+        </a>
+    </div>
+</section>
+
+
+<script src="./js/js.js"></script>
+</body>
+</html>
